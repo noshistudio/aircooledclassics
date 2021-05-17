@@ -5,6 +5,8 @@ import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
 import Layout from '../components/Layout'
 
+import './HomePage.css'
+
 // Export Template for use in CMS preview
 export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
   <main className="Home">
@@ -13,6 +15,7 @@ export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
       title={title}
       subtitle={subtitle}
       backgroundImage={featuredImage}
+      customStyle="homepage-header"
     />
 
     <section className="section">

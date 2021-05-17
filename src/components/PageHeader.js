@@ -10,9 +10,11 @@ const PageHeader = ({
   subtitle,
   backgroundImage,
   large,
+  customStyle,
   className = ''
 }) => {
   if (large) className += ' PageHeader-large'
+  if (customStyle) className += ' ' + customStyle
   return (
     <div className={`PageHeader relative ${className}`}>
       {backgroundImage && (
