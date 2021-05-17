@@ -2,7 +2,7 @@
 template: ContactPage
 slug: contact
 title: Contact us
-featuredImage: https://ucarecdn.com/b1fbec6b-553b-4ed5-b9a6-8c4412c3a4ef/
+featuredImage: https://ucarecdn.com/ffd10a02-5191-4078-8965-994f1a61a056/
 subtitle: We'd love to chat.
 address: 13543 Prairie Ave, Hawthorne, CA 90250
 phone: "1"
