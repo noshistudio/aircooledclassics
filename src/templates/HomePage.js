@@ -11,11 +11,11 @@ import './HomePage.css'
 export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
   <main className="Home">
     <PageHeader
+      className="homepage-header"
       large
       title={title}
       subtitle={subtitle}
       backgroundImage={featuredImage}
-      customStyle="homepage-header"
     />
 
     <section className="section">
