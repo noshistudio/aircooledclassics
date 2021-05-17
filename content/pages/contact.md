@@ -16,6 +16,6 @@ meta:
     about classic cars, we can help!
   title: Contact Page
 ---
-# Interested? 
+# Interested?
 
-Use the form to get in touch or simply send us an email. Whether you're looking to buy or sell a classic car we can help. Even if you have no idea what you want, we can help you figure that out.
+Use the form to get in touch or simply send us an email. Whether you're looking to buy or sell a classic car we can help. Even if you have no idea what you want, we're here to help you figure that out.
