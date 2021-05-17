@@ -43,11 +43,11 @@ export const ContactPageTemplate = ({
                 <MapPin /> {address}
               </a>
             )}
-            {phone && (
+            {/* {phone && (
               <a className="Contact--Details--Item" href={`tel:${phone}`}>
                 <Smartphone /> {phone}
               </a>
-            )}
+            )} */}
             {email && (
               <a className="Contact--Details--Item" href={`mailto:${email}`}>
                 <Mail /> {email}
