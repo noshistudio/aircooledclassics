@@ -10,11 +10,11 @@ meta:
 ---
 Air Cooled Classic Cars is a Los Angeles based classic car dealership. We specialize in finding and restoring a variety of classic cars. 
 
-While our inventory is low we have figure on the pulse of this growing market and can help you find the car of your dreams. To learn more about what we do see our projects. 
+While our inventory is low we have finger on the pulse of this growing market and can help you find the car of your dreams. 
 
-Whether you know exactly what you want or simply know you want something, we'd love to chat. 
+Whether you know exactly what you want or simply know you want something, we'd love to [chat](/contact). 
 
-# Specialties 
+# Specialties
 
 * 365 Porsches 
 * Outlaws
