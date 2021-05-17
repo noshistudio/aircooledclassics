@@ -11,6 +11,7 @@ const PageHeader = ({
   backgroundImage,
   large,
   customStyle,
+  imagePosition = 'bottom',
   className = ''
 }) => {
   if (large) className += ' PageHeader-large'
@@ -24,6 +25,7 @@ const PageHeader = ({
           src={backgroundImage}
           alt={title}
           size="cover"
+          imagePosition={imagePosition}
         />
       )}
       <div className="container relative">
