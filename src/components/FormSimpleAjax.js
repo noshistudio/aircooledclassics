@@ -7,7 +7,7 @@ import './Form.css'
 
 class Form extends React.Component {
   static defaultProps = {
-    name: 'Simple Form Ajax',
+    name: 'Contact Us',
     subject: '', // optional subject of the notification email
     action: '',
     successMessage: 'Thanks for your submission, we will get back to you soon',
@@ -58,9 +58,9 @@ class Form extends React.Component {
 
     return (
       <Fragment>
-        {/* <Helmet>
+        <Helmet>
           <script src="https://www.google.com/recaptcha/api.js" />
-        </Helmet> */}
+        </Helmet>
         <form
           className="Form"
           name={name}
