@@ -133,10 +133,11 @@ class Form extends React.Component {
               required
             >
               <option disabled hidden>
-                Type of Inquiry
+                Type of Request
               </option>
-              <option>Looking to buy a car</option>
-              <option>Looking to sell a car</option>
+              <option>Looking to buy</option>
+              <option>Looking to restore</option>
+              <option>Looking to sell</option>
               <option>Other</option>
             </select>
           </label>
