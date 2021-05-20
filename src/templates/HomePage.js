@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import Helmet from 'react-helmet'
 
 import PageHeader from '../components/PageHeader'
 import Content from '../components/Content'
@@ -8,8 +9,15 @@ import Layout from '../components/Layout'
 import './HomePage.css'
 
 // Export Template for use in CMS preview
+
 export const HomePageTemplate = ({ title, subtitle, featuredImage, body }) => (
   <main className="Home">
+    <Helmet>
+      <meta
+        name="google-site-verification"
+        content="O1R7FJN-DSlN5WjE9s6RBONGX6Twdex8XwMRZFck0AE"
+      />
+    </Helmet>
     <PageHeader
       className="homepage-header"
       large

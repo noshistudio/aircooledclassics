@@ -51,10 +51,7 @@ export default ({ children, meta, title }) => {
 
         return (
           <Fragment>
-            <Helmet
-              defaultTitle={siteTitle}
-              titleTemplate={`%s | ${siteTitle}`}
-            >
+            <Helmet defaultTitle={siteTitle} titleTemplate={siteTitle}>
               {title}
               <link href="https://ucarecdn.com" rel="preconnect" crossorigin />
               <link rel="dns-prefetch" href="https://ucarecdn.com" />
