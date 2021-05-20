@@ -3,66 +3,79 @@ import React from 'react'
 import './Form.css'
 
 export default ({
-  name = 'Simple Form',
-  subject = '', // optional subject of the notification email
-  action = ''
+  name = 'Contact',
+  subject = 'Contact Form Submission', // optional subject of the notification email
+  action = '/'
 }) => (
   <form
-    className='Form'
+    className="Form"
     name={name}
     action={action}
-    data-netlify=''
-    data-netlify-honeypot='_gotcha'
+    method="POST"
+    data-netlify="true"
+    data-netlify-honeypot="_gotcha"
   >
-    <label className='Form--Label'>
+    <div className="Form--Group">
+      <label className="Form--Label">
+        <input
+          className="Form--Input Form--InputText"
+          type="text"
+          placeholder="Firstname"
+          name="firstname"
+          required
+        />
+        <span>Firstname</span>
+      </label>
+      <label className="Form--Label">
+        <input
+          className="Form--Input Form--InputText"
+          type="text"
+          placeholder="Lastname"
+          name="lastname"
+          required
+        />
+        <span>Lastname</span>
+      </label>
+    </div>
+    <label className="Form--Label">
       <input
-        className='Form--Input'
-        type='text'
-        placeholder='Name'
-        name='name'
+        className="Form--Input Form--InputText"
+        type="email"
+        placeholder="Email"
+        name="email"
         required
       />
+      <span>Email</span>
     </label>
-    <label className='Form--Label'>
-      <input
-        className='Form--Input'
-        type='email'
-        placeholder='Email'
-        name='email'
-        required
-      />
-    </label>
-    <label className='Form--Label has-arrow'>
+
+    <label className="Form--Label has-arrow">
       <select
-        className='Form--Input Form--Select'
-        name='type'
-        defaultValue='Type of Enquiry'
+        className="Form--Input Form--Select"
+        name="type"
+        defaultValue="Type of Enquiry"
         required
       >
         <option disabled hidden>
-          Type of Enquiry
+          Type of Request
         </option>
-        <option>Need to know more</option>
-        <option>Found a bug</option>
-        <option>Want to say hello</option>
+        <option>Looking to buy</option>
+        <option>Looking to restore</option>
+        <option>Looking to sell</option>
+        <option>Other</option>
       </select>
     </label>
-    <label className='Form--Label'>
+    <label className="Form--Label">
       <textarea
-        className='Form--Input Form--Textarea'
-        placeholder='Message'
-        name='message'
-        rows='10'
+        className="Form--Input Form--Textarea"
+        placeholder="Message"
+        name="message"
+        rows="10"
         required
       />
     </label>
-    <input type='text' name='_gotcha' style={{ display: 'none' }} />
-    {!!subject && <input type='hidden' name='subject' value={subject} />}
-    <input type='hidden' name='form-name' value={name} />
-    <input
-      className='Button Form--SubmitButton'
-      type='submit'
-      value='Enquire'
-    />
+    <input type="text" name="_gotcha" style={{ display: 'none' }} />
+    {!!subject && <input type="hidden" name="subject" value={subject} />}
+    <input type="hidden" name="form-name" value={name} />
+    <input className="Button Form--SubmitButton" type="submit" value="Submit" />
   </form>
 )
